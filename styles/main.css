@@ -1,0 +1,26 @@
+.container1 {
+    display: flex;
+    background-color: lime;
+    height: 50px;
+}
+.container1>div {
+    text-align: center;
+    font-size: xx-large;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.container1>div:hover {
+    background-color: #009e00;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .container1 {
+        flex-direction: column;
+    }
+}

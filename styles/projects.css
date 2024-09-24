@@ -1,0 +1,56 @@
+.container1 {
+    display: flex;
+    background-color: lime;
+}
+.container1>div {
+    text-align: center;
+    font-size: xx-large;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+}
+.container1>div:hover {
+    background-color: #009e00;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.flex-container>h2 {
+    text-align: left;
+}
+
+
+@media screen and (max-width: 500px) {
+    .flex-container>div {
+        background-color: #CCDDD3;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 501px) {
+        .flex-container>div {
+            background-color: #AFC2D5;
+        }   
+    }
+
+@media screen and (min-width: 800px) {
+    .flex-container>div {
+        background-color: #FFF9A5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container1 {
+        flex-direction: column;
+    }
+}
